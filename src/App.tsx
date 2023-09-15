@@ -6,7 +6,25 @@ function App() {
 
     const [text, setText] = useState<string>("？");
     const buttonClick = () => {
-        setText("ボタン押下");
+
+        const number: number = Math.random();
+        const omikujiNumber : number = Math.floor(number * 3);
+
+        console.log(omikujiNumber);
+
+        switch (omikujiNumber) {
+            case 0:
+                setText("大吉");
+                break;
+            case 1:
+                setText("中吉");
+                break;
+            case 2:
+                setText("凶");
+                break;
+            default:
+                setText("エラー")
+        }
     }
 
   return (
