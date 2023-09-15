@@ -10,3 +10,17 @@ section {
     text-align: center;
     color: red;
 }
+
+h1 {
+    margin: 0;
+    border-bottom: 2px solid;
+    font-weight: normal;
+    padding: 8px 0;
+}
+
+p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 24px 0;
+}
