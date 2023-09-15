@@ -12,19 +12,22 @@ function App() {
 
         console.log(omikujiNumber);
 
-        switch (omikujiNumber) {
-            case 0:
-                setText("大吉");
-                break;
-            case 1:
-                setText("中吉");
-                break;
-            case 2:
-                setText("凶");
-                break;
-            default:
-                setText("エラー")
-        }
+        const result: string[] = ["大吉", "中吉", "凶"]
+        setText(result[omikujiNumber]);
+
+        // switch (omikujiNumber) {
+        //     case 0:
+        //         setText("大吉");
+        //         break;
+        //     case 1:
+        //         setText("中吉");
+        //         break;
+        //     case 2:
+        //         setText("凶");
+        //         break;
+        //     default:
+        //         setText("エラー")
+        // }
     }
 
   return (
