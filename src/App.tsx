@@ -31,7 +31,7 @@ function App() {
     <main>
       <section>
           <h1>今日の運勢</h1>
-          <p className="pTag">{text}</p>
+          <p>{text}</p>
       </section>
         <button onClick={buttonClick}>おみくじを引く</button>
     </main>
