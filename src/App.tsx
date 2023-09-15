@@ -4,7 +4,13 @@ import './App.css';
 
 function App() {
   return (
-    <p>TEST</p>
+    <main>
+      <section>
+          <h1>今日の運勢</h1>
+          <p>?</p>
+      </section>
+        <button>おみくじを引く</button>
+    </main>
   );
 }
 
