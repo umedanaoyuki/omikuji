@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+    const [text, setText] = useState<string>("？");
+    const buttonClick = () => {
+        setText("ボタン押下");
+    }
+
   return (
     <main>
       <section>
           <h1>今日の運勢</h1>
-          <p>?</p>
+          <p className="pTag">{text}</p>
       </section>
-        <button>おみくじを引く</button>
+        <button onClick={buttonClick}>おみくじを引く</button>
     </main>
   );
 }
